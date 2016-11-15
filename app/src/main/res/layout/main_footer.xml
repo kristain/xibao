@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_footer"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/main_footer_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/foot_bar_new"
+        style="@style/main_footbar_radio"
+        android:text="@string/main_navigation_new"
+        android:drawableTop="@drawable/widget_bar_home_bg"
+        android:checked="true"/>
+
+    <RadioButton
+        android:id="@+id/foot_bar_performance"
+        style="@style/main_footbar_radio"
+        android:text="@string/main_navigation_performance"
+        android:drawableTop="@drawable/widget_bar_im_bg"/>
+
+    <RadioButton
+        android:id="@+id/foot_bar_workbench"
+        style="@style/main_footbar_radio"
+        android:text="@string/main_navigation_workbench"
+        android:drawableTop="@drawable/widget_bar_interest_bg"/>
+
+    <RadioButton
+        android:id="@+id/main_footbar_application"
+        style="@style/main_footbar_radio"
+        android:text="@string/main_navigation_application"
+        android:drawableTop="@drawable/widget_bar_user_bg"/>
+
+</LinearLayout>

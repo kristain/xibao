@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/new_content_item_bg"
+    android:orientation="vertical">
+
+   <include layout="@layout/main_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_content_item_bg">
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月提成总额:"
+            android:textSize="@dimen/text_size_16"
+            />
+        <TextView
+            android:id="@+id/total_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:text="0元"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.drjing.xibao.common.view.pulltorefresh.PullToRefreshListView
+        android:id="@+id/listView"
+        android:scrollbars="none"
+        android:background="@color/new_content_item_bg"
+        android:layout_width="fill_parent"
+        android:divider="@null"
+        android:footerDividersEnabled="false"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/new_content_item_bg"
+        android:layout_height="fill_parent"/>
+
+</LinearLayout>

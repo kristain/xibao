@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header" />
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/new_content_item_bg"
+        android:orientation="horizontal">
+
+        <com.drjing.xibao.common.view.materialwidget.PaperButton
+            android:id="@+id/pre_month"
+            widget:paper_text="上个月"
+            android:layout_weight="1"
+            widget:paper_text_color="@color/gray"
+            android:layout_gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="fill_parent"
+            android:background="@color/report_splitline_color"></View>
+
+        <TextView
+            android:id="@+id/ranktitle_text"
+            android:layout_weight="0.7"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="2015.12.13"/>
+
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="fill_parent"
+            android:background="@color/report_splitline_color"></View>
+
+        <com.drjing.xibao.common.view.materialwidget.PaperButton
+            android:id="@+id/next_month"
+            widget:paper_text="下一月"
+            android:layout_weight="1"
+            widget:paper_text_color="@color/gray"
+            android:layout_gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/report_splitline_color"></View>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/new_content_item_bg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:text="名次" />
+
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_split_black"></View>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:text="姓名" />
+
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_split_black"></View>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:text="门店" />
+
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_split_black"></View>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:text="完成值" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_content_item_bg">
+    </ListView>
+
+
+    <TextView
+        android:id="@+id/source_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/space_5"
+        android:text="数据来源:当月自己销售日志消耗累积数量"
+        android:layout_marginRight="@dimen/space_10"
+        android:textColor="@color/red"/>
+
+</LinearLayout>

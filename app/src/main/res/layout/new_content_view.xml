@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/content_padding">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/news_content_hor_view"
+            android:layout_height="fill_parent"
+            android:background="@color/hor_view_red_color_bg"></View>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_content_item_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/order_remark_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.0dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="10.0dp"
+                android:visibility="gone"
+                android:paddingTop="5.0dp">
+
+                <ImageView
+                    android:id="@+id/remark_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_order" />
+
+                <TextView
+                    android:id="@+id/order_remark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="6.0dp"
+                    android:layout_toRightOf="@+id/remark_logo"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="订单备注"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/order_remark_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_remark"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/remark_logo"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="还有3个客户未备注"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/order_remark_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6.0dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/remark_logo"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/new_content_item_split_view"></View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/sale_log_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.0dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="10.0dp"
+                android:visibility="gone"
+                android:paddingTop="5.0dp">
+
+                <ImageView
+                    android:id="@+id/sale_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_order" />
+
+                <TextView
+                    android:id="@+id/sale_log_remark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="6.0dp"
+                    android:layout_toRightOf="@+id/sale_logo"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="销售日志"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/sale_log_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sale_log_remark"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/sale_logo"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="还有3个客户未备注"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/sale_log_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6.0dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/sale_logo"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/new_content_item_split_view"></View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/customer_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.0dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="10.0dp"
+                android:visibility="gone"
+                android:paddingTop="5.0dp">
+
+                <ImageView
+                    android:id="@+id/customer_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_order" />
+
+                <TextView
+                    android:id="@+id/customer_remark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="6.0dp"
+                    android:layout_toRightOf="@+id/customer_logo"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="未分配客户"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/customer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customer_remark"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/customer_logo"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="还有3个客户未备注"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/customer_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6.0dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/new_order_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.0dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="10.0dp"
+                android:paddingTop="5.0dp">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_order" />
+
+                <TextView
+                    android:id="@+id/new_order"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="6.0dp"
+                    android:layout_toRightOf="@+id/logo"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="新增订单"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/new_order_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/new_order"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/logo"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="您还有3个订单还未服务"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/new_order_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6.0dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/logo"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/new_content_item_split_view"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/service_log_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.0dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="10.0dp"
+                android:paddingTop="5.0dp">
+
+                <ImageView
+                    android:id="@+id/service_log_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_service" />
+
+                <TextView
+                    android:id="@+id/service_log"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="6.0dp"
+                    android:layout_toRightOf="@+id/service_log_logo"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="服务日志"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/service_log_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/service_log"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/service_log_logo"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="您还有3位客户还未填写服务日志"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/service_log_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6.0dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/service_log"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/new_content_item_split_view"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/notice_log_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.0dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="10.0dp"
+                android:paddingTop="5.0dp">
+
+                <ImageView
+                    android:id="@+id/notice_log_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_notice" />
+
+                <TextView
+                    android:id="@+id/notice_log"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="6.0dp"
+                    android:layout_toRightOf="@+id/notice_log_logo"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="提醒日志"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/notice_log_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notice_log"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/notice_log_logo"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="您还有3个客户还未提醒到店"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/notice_log_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6.0dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/notice_log_logo"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/new_content_item_split_view"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/return_log_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.0dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="10.0dp"
+                android:paddingTop="5.0dp">
+
+                <ImageView
+                    android:id="@+id/return_log_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_return" />
+
+                <TextView
+                    android:id="@+id/return_log"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="6.0dp"
+                    android:layout_toRightOf="@+id/return_log_logo"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="回访日志"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/return_log_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/return_log"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/return_log_logo"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="您还有3个已完成订单还未回访"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/return_logo_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6.0dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/return_log_logo"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/new_content_item_split_view"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activate_customers_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.0dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="10.0dp"
+                android:paddingTop="5.0dp">
+
+                <ImageView
+                    android:id="@+id/activate_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_customer" />
+
+                <TextView
+                    android:id="@+id/activate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="6.0dp"
+                    android:layout_toRightOf="@+id/activate_logo"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="睡眠客激活"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/activate_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/activate"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/activate_logo"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="您有60个睡眠客未激活"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/activate_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6.0dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/activate_logo"
+                    android:layout_marginTop="20dp"></View>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/news_content_item_space"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/news_content_hor_view"
+            android:layout_height="fill_parent"
+            android:background="@color/hor_view_purple_color_bg"></View>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_content_item_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/report_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.0dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="10.0dp"
+                android:paddingTop="5.0dp">
+
+                <ImageView
+                    android:id="@+id/report_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_report" />
+
+                <TextView
+                    android:id="@+id/report"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="6.0dp"
+                    android:layout_toRightOf="@+id/report_logo"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="工作日报"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/report_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/report"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/report_logo"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="今日已有0人提交了日报"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/report_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6.0dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/report_logo"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/new_content_item_split_view"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/schedule_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5.0dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="10.0dp"
+                android:paddingTop="5.0dp">
+
+                <ImageView
+                    android:id="@+id/schedule_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_schedule" />
+
+                <TextView
+                    android:id="@+id/schedule"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="6.0dp"
+                    android:layout_toRightOf="@+id/schedule_logo"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="日程"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/schedule_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/schedule"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/schedule_logo"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="今日有0个日程"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/schedule_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6.0dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/schedule_logo"
+                    android:layout_marginTop="20dp"></View>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/report_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/new_content_item_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/solid_sharp_btn"
+                android:textColor="@color/white"
+                android:text="2015.12.29" />
+
+
+            <TextView
+                android:id="@+id/shedule_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/red"
+                android:background="@drawable/transparent_sharp_btn"
+                android:text="门店提醒" />
+
+
+            <TextView
+                android:id="@+id/schedule_user"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/red"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/transparent_sharp_btn"
+                android:visibility="gone"
+                android:text="提醒人:芳芳" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/remark"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="张姐生日" />
+    </LinearLayout>
+
+
+</LinearLayout>

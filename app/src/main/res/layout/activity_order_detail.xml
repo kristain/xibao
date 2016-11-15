@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="8.0dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/new_content_item_bg"
+                android:layout_marginTop="6.0dp"
+                >
+
+                <TextView
+                    android:id="@+id/order_no_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:text="订单号:"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/order_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/order_no_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_15" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/order_no"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/new_content_item_split_view"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/new_content_item_bg">
+
+                <TextView
+                    android:id="@+id/custom_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="小姐"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/custom_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_certification" />
+
+                <TextView
+                    android:id="@+id/custom_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/logo"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:id="@+id/custom_phone_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10.0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_telephone" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/custom_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/new_content_item_split_view"></View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/new_content_item_bg">
+
+                <TextView
+                    android:id="@+id/service_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/service_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/service_type"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/service_type"
+                    android:layout_marginTop="20dp"></View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dp"
+                android:background="@color/new_content_item_bg">
+
+                <TextView
+                    android:id="@+id/service_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:text="服务时间:"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/service_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/service_date"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/service_date"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/new_content_item_split_view"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/new_content_item_bg">
+
+                <TextView
+                    android:id="@+id/order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:text="下单时间:"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/order_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/order_date"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/order_date"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/new_content_item_split_view"></View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/new_content_item_bg">
+
+                <TextView
+                    android:id="@+id/report_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:text="报时时间:"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/report_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/report_date"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/report_date"
+                    android:layout_marginTop="20dp"
+                   ></View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:background="@color/new_content_item_bg">
+
+                <TextView
+                    android:id="@+id/order_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:text="状态:"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/order_status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/order_status"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/order_status"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/new_content_item_split_view"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/new_content_item_bg">
+
+                <TextView
+                    android:id="@+id/code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:text="地址:"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/code_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/code"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/code"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/new_content_item_split_view"></View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/remark_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/new_content_item_bg">
+
+                <TextView
+                    android:id="@+id/remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:text="备注:"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/remark_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/remark"
+                    android:layout_marginRight="130dp"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/remark_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="备注人:"
+                    android:textSize="@dimen/text_size_16" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/remark"
+                    android:layout_marginTop="20dp"
+                    ></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/edit_remark_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/new_content_item_bg">
+
+                <EditText
+                    android:id="@+id/remark_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:hint="添加一个备注"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/edittext_drawable"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/add_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:background="@drawable/red_textview_drawable"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text=" 提交 "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_below="@+id/add_remark"
+                    android:layout_marginTop="20dp"
+                    ></View>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:id="@+id/nurse_log_layout"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_unfill">
+                    <RadioButton
+                        android:id="@+id/nurse_log_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/icon_ddxq_nurse"
+                        android:textColor="@color/log_btn_text_color"
+                        android:textSize="10sp"
+                        android:text="护理日志"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/special_log_layout"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_unfill">
+                    <RadioButton
+                        android:id="@+id/special_log_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/icon_calendar"
+                        android:textColor="@color/log_btn_text_color"
+                        android:textSize="10sp"
+                        android:text="特殊日期"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/secret_log_layout"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_unfill">
+                    <RadioButton
+                        android:id="@+id/secret_log_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/icon_heart"
+                        android:textColor="@color/log_btn_text_color"
+                        android:textSize="10sp"
+                        android:text="私密日志"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/secret_topic_layout"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_unfill">
+                    <RadioButton
+                        android:id="@+id/secret_topic_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/icon_dislike"
+                        android:textColor="@color/log_btn_text_color"
+                        android:textSize="10sp"
+                        android:text="私密话题"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/sale_log_layout"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_unfill">
+
+                    <RadioButton
+                        android:id="@+id/sale_log_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/icon_wallet"
+                        android:textColor="@color/log_btn_text_color"
+                        android:textSize="10sp"
+                        android:text="销售日志"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/visit_log_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/icon_unfill">
+
+                    <RadioButton
+                        android:id="@+id/visit_log_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/icon_wallet"
+                        android:textColor="@color/log_btn_text_color"
+                        android:textSize="10sp"
+                        android:text="回访日志"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/notice_log_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/icon_unfill">
+
+                    <RadioButton
+                        android:id="@+id/notice_log_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/icon_wallet"
+                        android:textColor="@color/log_btn_text_color"
+                        android:textSize="10sp"
+                        android:text="提醒日志"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/sale_log_layout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/icon_unfill">
+
+                    <RadioButton
+                        android:id="@+id/sale_log_btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:layout_centerInParent="true"
+                        android:drawableTop="@drawable/icon_wallet"
+                        android:textColor="@color/log_btn_text_color"
+                        android:textSize="10sp"
+                        android:text="销售日志"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.drjing.xibao.common.view.materialwidget.PaperButton
+                android:id="@+id/paper_button"
+                widget:paper_text="点击查询客户其他信息"
+                android:layout_marginTop="10dp"
+                widget:paper_text_color="@color/red"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="54dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

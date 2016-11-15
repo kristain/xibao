@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/new_content_item_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header"/>
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/new_content_item_bg"
+        >
+        <TextView
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_search"
+            android:layout_centerHorizontal="true"
+            android:text="搜索"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dp"
+        android:background="@color/new_content_item_split_view"></View>
+    <TextView
+        android:id="@+id/list_sum"
+        android:layout_width="fill_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/new_content_item_bg"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="共0条"/>
+
+    <com.drjing.xibao.common.view.pulltorefresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listView"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/gray"
+        android:background="@color/new_content_item_bg"
+        android:scrollbars="none"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        ptr:ptrListViewExtrasEnabled="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</LinearLayout>

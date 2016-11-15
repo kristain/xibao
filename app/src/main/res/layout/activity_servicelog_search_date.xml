@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/report_bg"
+    >
+
+    <include layout="@layout/main_header" />
+
+    <com.drjing.xibao.common.view.calendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:background="@color/new_content_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dp"
+        android:background="@color/color_split_black"></View>
+    <ListView
+        android:id="@+id/list_view"
+        android:background="@color/new_content_item_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"></ListView>
+
+</LinearLayout>

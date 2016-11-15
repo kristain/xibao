@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/report_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_content_item_bg"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/call_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/icon_txrz_call"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="打电话  "/>
+            <RadioButton
+                android:id="@+id/wechat_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableLeft="@drawable/icon_txrz_wechat"
+                android:layout_gravity="center"
+                android:text="微信发送"/>
+            <RadioButton
+                android:id="@+id/msg_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/icon_txrz_msg"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="短信发送"/>
+
+            <com.drjing.xibao.common.view.materialwidget.PaperButton
+                android:id="@+id/select_template_btn"
+                widget:paper_text="选择模版"
+                android:layout_weight="1"
+                widget:paper_color="@color/red"
+                widget:paper_corner_radius="2dp"
+                android:layout_gravity="center"
+                widget:paper_text_color="@color/white"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/msg_content"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_height="wrap_content"
+                android:minLines="4"
+                android:maxLines="20"
+                android:background="@drawable/edittext_drawable"
+                android:gravity="top"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:textColor="@color/color_text_gray"
+                android:text="" />
+
+            <com.drjing.xibao.common.view.materialwidget.PaperButton
+                android:id="@+id/save_btn"
+                widget:paper_text="存为模版"
+                android:layout_weight="3"
+                widget:paper_color="@color/red"
+                widget:paper_corner_radius="2dp"
+                android:layout_gravity="center"
+                widget:paper_text_color="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="85dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        ></ListView>
+
+</LinearLayout>

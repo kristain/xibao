@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/new_content_item_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_content_item_bg"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10.0dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="订单号"/>
+
+                <EditText
+                    android:id="@+id/order_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_drawable"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_marginRight="10dp"
+                    android:hint="请填写订单号"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/color_split_black"></View>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="姓名"/>
+
+                <EditText
+                    android:id="@+id/account_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_drawable"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/text_size_16"
+                    android:hint="请填写客户姓名"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/color_split_black"></View>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="手机"/>
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_drawable"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/text_size_16"
+                    android:hint="请填写手机号码"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/color_split_black"></View>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="是否会员"/>
+
+                <RadioGroup
+                    android:id="@+id/is_member"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/is_member_btn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_drawable"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@drawable/selector_date_color"
+                        android:textSize="@dimen/text_size_16"
+                        android:text="是"/>
+
+                    <RadioButton
+                        android:id="@+id/not_member_btn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_drawable"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:button="@null"
+                        android:textColor="@drawable/selector_date_color"
+                        android:textSize="@dimen/text_size_16"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/color_split_black"></View>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.15"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="服务日期"/>
+
+                <TextView
+                    android:id="@+id/service_startdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_drawable"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="开始日期"/>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_split_black"
+                    android:layout_gravity="center_vertical"></View>
+
+                <TextView
+                    android:id="@+id/service_enddate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_drawable"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="结束日期"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/color_split_black"></View>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.15"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="下单日期"/>
+
+                <TextView
+                    android:id="@+id/order_startdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_drawable"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="开始日期"/>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/color_split_black"
+                    android:layout_gravity="center_vertical"></View>
+
+                <TextView
+                    android:id="@+id/order_enddate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_drawable"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="结束日期"/>
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/color_split_black"></View>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="服务状态"/>
+
+                <com.drjing.xibao.common.view.materialspinner.NiceSpinner
+                    android:id="@+id/select_servicestatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="请选择"/>
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/color_split_black"></View>
+
+            <com.drjing.xibao.common.view.materialwidget.PaperButton
+                android:id="@+id/submit_btn"
+                widget:paper_text="提交"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                widget:paper_color="@color/red"
+                widget:paper_text_color="@color/white"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+          </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

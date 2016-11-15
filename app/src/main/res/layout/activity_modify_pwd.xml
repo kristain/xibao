@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/new_content_item_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header" />
+
+    <EditText
+        android:id="@+id/old_passwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/edittext_drawable"
+        android:textSize="@dimen/space_16"
+        android:hint="请输入旧密码"/>
+
+
+    <EditText
+        android:id="@+id/new_passwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edittext_drawable"
+        android:textSize="@dimen/space_16"
+        android:hint="请输入新密码"/>
+
+
+    <EditText
+        android:id="@+id/comfirm_passwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textSize="@dimen/space_16"
+        android:background="@drawable/edittext_drawable"
+        android:hint="请确认新密码"/>
+
+
+    <com.drjing.xibao.common.view.materialwidget.PaperButton
+        android:id="@+id/submit_button"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        widget:paper_color="@color/main_header_bg"
+        widget:paper_shadow_color="@color/red"
+        widget:paper_text="提交"
+        widget:paper_text_color="@color/white" />
+</LinearLayout>

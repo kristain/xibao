@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_view_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header" />
+
+    <RelativeLayout
+        android:id="@+id/person_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dp"
+        android:background="@color/white"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10.0dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_logo" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/logo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/logo"
+            android:ellipsize="end"
+            android:text="李芳芳"
+            android:textColor="#101010"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/role_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/logo"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/name"
+            android:ellipsize="end"
+            android:src="@drawable/icon_txrz_nurse" />
+
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/logo"
+            android:ellipsize="end"
+            android:text="150 4582 9999"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            android:id="@+id/shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tel"
+            android:ellipsize="end"
+            android:text="静博士朝晖店"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            android:id="@+id/rolename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/shopname"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="美容师"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:text="注销"
+            android:background="@drawable/edittext_drawable" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/news_content_item_space"
+        android:paddingLeft="5dp"
+        android:background="@color/new_content_item_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/company_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10.0dp">
+
+            <ImageView
+                android:id="@+id/company_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_grzx_user" />
+
+            <TextView
+                android:id="@+id/company"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dp"
+                android:layout_toRightOf="@+id/company_logo"
+                android:ellipsize="end"
+                android:text="我的公司"
+                android:textColor="@color/color_text_black"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dp"
+                android:layout_marginRight="10.0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_enter_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="15.0dp"
+            android:background="@color/new_content_item_split_view"></View>
+
+        <RelativeLayout
+            android:id="@+id/passwd_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10.0dp">
+
+            <ImageView
+                android:id="@+id/passwd_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_grzx_help" />
+
+            <TextView
+                android:id="@+id/passwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dp"
+                android:layout_toRightOf="@+id/passwd_logo"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="修改密码"
+                android:textColor="@color/color_text_black"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dp"
+                android:layout_marginRight="10.0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_enter_arrow" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="15.0dp"
+            android:background="@color/new_content_item_split_view"></View>
+
+        <RelativeLayout
+            android:id="@+id/versioncheck_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10.0dp">
+
+            <ImageView
+                android:id="@+id/version_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_grzx_switch" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dp"
+                android:layout_toRightOf="@+id/version_logo"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="检测最新版本"
+                android:textColor="@color/color_text_black"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/version_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:text="V0.0.1"
+                android:layout_marginRight="25.0dp"
+                android:textColor="@color/color_text_black"
+                android:textSize="@dimen/text_size_12" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dp"
+                android:layout_marginRight="10.0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_enter_arrow" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/news_content_item_space"
+        android:paddingLeft="5dp"
+        android:background="@color/new_content_item_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/about_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10.0dp">
+
+            <ImageView
+                android:id="@+id/about_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_grzx_heart" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dp"
+                android:layout_toRightOf="@+id/about_logo"
+                android:ellipsize="end"
+                android:text="关于喜报"
+                android:textColor="@color/color_text_black"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dp"
+                android:layout_marginRight="10.0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_enter_arrow" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="15.0dp"
+            android:background="@color/new_content_item_split_view"></View>
+
+        <RelativeLayout
+            android:id="@+id/question_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10.0dp">
+
+            <ImageView
+                android:id="@+id/question_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_grzx_paper_plane" />
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dp"
+                android:layout_toRightOf="@+id/question_logo"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="问题反馈"
+                android:textColor="@color/color_text_black"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dp"
+                android:layout_marginRight="10.0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_enter_arrow" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

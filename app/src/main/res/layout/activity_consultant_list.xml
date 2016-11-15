@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="48dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_content_item_bg"
+        android:paddingBottom="15dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:text="请选择顾问"
+        android:textSize="@dimen/text_size_16" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/new_content_item_split_view"></View>
+
+    <ListView
+        android:layout_below="@+id/line"
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:background="@color/new_content_item_bg"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:choiceMode ="singleChoice"
+        android:layout_marginBottom="45dp"
+        ></ListView>
+
+    <com.drjing.xibao.common.view.materialwidget.PaperButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/new_content_item_bg"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        widget:paper_color="@color/red"
+        widget:paper_text="提交"
+        widget:paper_text_color="@color/white" />
+</RelativeLayout>

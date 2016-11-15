@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:background="@color/login_nav_bg"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/login_bg"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="fill_parent"
+            android:layout_height="100.0dip"
+            android:layout_marginLeft="18.0dip"
+            android:layout_marginRight="18.0dip"
+            android:layout_marginTop="250.0dip"
+           >
+
+            <RelativeLayout
+                android:id="@+id/layoutPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/login_yzm_oval_shape_gray">
+
+                <ImageView
+                    android:id="@+id/imgPhone"
+                    android:layout_width="18.0dip"
+                    android:layout_height="18.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18.0dip"
+                    android:background="@drawable/login_phone" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/imgPhone"
+                    android:background="@null"
+                    android:hint="用户名"
+                    android:inputType="text"
+                    android:maxLength="11"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff111111"
+                    android:text=""
+                    android:textColorHint="@color/white"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:id="@+id/imgCancel"
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12.0dip"
+                    android:background="@drawable/cancel_phone"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutPasswd"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_yzm_oval_shape_gray"
+                android:layout_below="@+id/layoutPhone">
+
+
+                <ImageView
+                    android:id="@+id/imgCode"
+                    android:layout_width="18.0dip"
+                    android:layout_height="18.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18.0dip"
+                    android:background="@drawable/login_lock" />
+
+                <EditText
+                    android:id="@+id/passwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/imgCode"
+                    android:background="@null"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:text=""
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff111111"
+                    android:textColorHint="@color/white"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/rl_1"
+            android:id="@+id/rememberpasswdlayout"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="15.0dip"
+            android:layout_height="45.0dip">
+
+            <ImageView
+                android:id="@+id/remember_passwd"
+                android:layout_width="15.0dip"
+                android:layout_height="18.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/login_lock" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/remember_passwd"
+                android:text="记住密码"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15.0dip"
+                android:singleLine="true"
+                android:textColor="#ffffffff"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSure"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_below="@+id/rememberpasswdlayout"
+            android:layout_marginLeft="18.0dip"
+            android:layout_marginRight="18.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/login_rect_white"
+            android:text="登录"
+            android:textColor="#ff774c"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40.0dip"
+            android:background="@drawable/login_close" />
+
+    </RelativeLayout>
+</RelativeLayout>

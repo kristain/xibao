@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8.0dp"
+    android:paddingTop="8.0dp">
+
+    <TextView
+        android:id="@+id/custom_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_gravity="center_vertical"
+        android:text="张小姐"
+        android:textColor="@color/color_text_black"
+        android:textSize="@dimen/text_size_16" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/custom_name"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:src="@drawable/icon_certification" />
+
+    <TextView
+        android:id="@+id/custom_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:ellipsize="end"
+        android:layout_gravity="center_vertical"
+        android:text="150 0000 9999"
+        android:textColor="@color/color_text_black"
+        android:textSize="@dimen/text_size_16" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_name"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/beautician_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/icon_nurse" />
+
+        <TextView
+            android:id="@+id/beautician_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/counselor_logo"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/icon_shape" />
+
+        <TextView
+            android:id="@+id/counselor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/custom_name"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/shop_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/icon_location" />
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</RelativeLayout>

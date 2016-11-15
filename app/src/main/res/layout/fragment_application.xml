@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_content_item_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header" />
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_content_item_bg"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginTop="@dimen/news_content_item_space"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/red_view"
+            android:layout_width="@dimen/news_content_hor_view"
+            android:layout_height="fill_parent"
+            android:background="@color/hor_view_red_color_bg"></View>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_content_item_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/product_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="5.0dp"
+                android:visibility="gone"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:id="@+id/product_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_yy_location" />
+
+                <TextView
+                    android:id="@+id/product"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toRightOf="@+id/product_logo"
+                    android:ellipsize="end"
+                    android:text="产品库"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+
+                <TextView
+                    android:id="@+id/product_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:ellipsize="end"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_enter_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:layout_below="@+id/product_logo"
+                android:background="@color/new_content_item_split_view"></View>
+
+            <RelativeLayout
+                android:id="@+id/knowlege_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/new_content_item_bg"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="5.0dp"
+                android:visibility="gone"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:id="@+id/knowlege_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_yy_education" />
+
+                <TextView
+                    android:id="@+id/knowlege"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toRightOf="@+id/knowlege_logo"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="知识库(教育)"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+
+                <TextView
+                    android:id="@+id/knowlege_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:ellipsize="end"
+                    android:text="1"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_enter_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginTop="@dimen/news_content_item_space"
+        android:background="@color/new_content_item_bg"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/purple_view"
+            android:layout_width="@dimen/news_content_hor_view"
+            android:layout_height="fill_parent"
+            android:background="@color/hor_view_purple_color_bg"></View>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_content_item_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/market_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="5.0dp"
+                android:visibility="gone"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:id="@+id/market_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_yy_marketing" />
+
+                <TextView
+                    android:id="@+id/market"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toRightOf="@+id/market_logo"
+                    android:ellipsize="end"
+                    android:text="喜阅教育"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+
+                <TextView
+                    android:id="@+id/market_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:ellipsize="end"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_enter_arrow" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/new_content_item_split_view"></View>
+            <RelativeLayout
+                android:id="@+id/enterprise_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="5.0dp"
+                android:visibility="gone"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:id="@+id/enterprise_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_yy_magazine" />
+
+                <TextView
+                    android:id="@+id/enterprise"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toRightOf="@+id/enterprise_logo"
+                    android:ellipsize="end"
+                    android:text="企业微刊"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+
+                <TextView
+                    android:id="@+id/enterprise_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:ellipsize="end"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_enter_arrow" />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/new_content_item_split_view"></View>
+
+            <RelativeLayout
+                android:id="@+id/intract_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5.0dp"
+                android:visibility="gone"
+                android:paddingRight="5.0dp"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:id="@+id/intract_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_yy_chat" />
+
+                <TextView
+                    android:id="@+id/intract"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toRightOf="@+id/intract_logo"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="喜鹊互动"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+
+                <TextView
+                    android:id="@+id/intract_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:ellipsize="end"
+                    android:text=""
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_enter_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:background="@color/new_content_item_bg"
+        android:layout_marginTop="@dimen/news_content_item_space"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/blue_view"
+            android:layout_width="@dimen/news_content_hor_view"
+            android:layout_height="fill_parent"
+            android:background="@color/hor_view_blue_color_bg"></View>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_content_item_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/shop_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5.0dp"
+                android:visibility="gone"
+                android:paddingRight="5.0dp"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:id="@+id/shop_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_yy_home" />
+
+                <TextView
+                    android:id="@+id/shop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toRightOf="@+id/shop_logo"
+                    android:ellipsize="end"
+                    android:text="我的小店"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_enter_arrow" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

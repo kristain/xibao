@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.drjing.xibao" >
+
+    <!-- 屏幕兼容模式配置 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <!-- 读写系统设置权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <!--允许读取电话的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--添加可以向外拨打电话的权限  -->
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <!--允许发送短信-->
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".module.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".module.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.OrdersListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.CustomerOrderListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.workbench.activity.OrderSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.OrderQueryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.workbench.activity.RemindActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.news.activity.UnactivatCustomListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.news.activity.UnAssignCustomListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.AdviserCustomerListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.workbench.activity.ConsultantStoreSingleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.StaffStoreSingleListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.news.activity.DateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.MessageTemplateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ReportActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ReportViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.workbench.activity.ReportListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ReportDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ReportStoreActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.news.activity.CustomerStoreActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".module.workbench.activity.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.workbench.activity.SaleLogDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.news.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.application.activity.MemberInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.performance.activity.MySalaryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.performance.activity.WalletActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.performance.activity.WalletAddActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.performance.activity.AimSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.application.activity.ArticleDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.application.activity.AboutUsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.application.activity.ModifyPwdActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.application.activity.ArticleListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.performance.activity.RankActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.CustomerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.StoreCustomerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.news.activity.AllCustomListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.SubStaffListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.MyCustomerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.CustomerDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ProjectListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ActionPlanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.LeaderActionPlanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.workbench.activity.SubEmployeeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ActionPlanListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ActionPlanAddActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ScheduleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ScheduleAddActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ScheduleMonthActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.workbench.activity.NurseLogActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.SpecialLogActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.LifeLogActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.workbench.activity.TopicLogActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.workbench.activity.SaleLogAddActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.SaleLogActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.MyOrderListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ActivatCycleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ConsultantListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.workbench.activity.ConsultantSingleListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.workbench.activity.CustomerSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.application.activity.AccountInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.application.activity.ProductListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.application.activity.QuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.application.activity.MyCompanyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.performance.activity.AimDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.performance.activity.AdviserAimDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.performance.activity.AreaManagerAimDetailActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.performance.activity.StaffAimDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.performance.activity.StoreAimDetailActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".module.performance.activity.ImageGalleryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.performance.activity.HouseDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+
+    </application>
+
+</manifest>

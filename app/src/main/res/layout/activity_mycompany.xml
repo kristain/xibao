@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/new_content_item_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header" />
+
+    <TextView
+        android:id="@+id/company_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/edittext_drawable"
+        android:textSize="@dimen/space_14"
+        android:hint="请输入要加入的公司"/>
+
+    <com.drjing.xibao.common.view.materialwidget.PaperButton
+        android:id="@+id/submit_button"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        widget:paper_color="@color/red"
+        widget:paper_text="提交"
+        android:visibility="gone"
+        widget:paper_text_color="@color/white" />
+
+
+    <TextView
+        android:id="@+id/message_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="提示:该公司不存在"/>
+
+</LinearLayout>

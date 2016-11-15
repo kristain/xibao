@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/new_content_item_bg"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/pre_month"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="上月" />
+
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="fill_parent"
+            android:background="@color/report_splitline_color"></View>
+
+        <TextView
+            android:id="@+id/aim_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="生美预收" />
+
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="fill_parent"
+            android:background="@color/report_splitline_color"></View>
+
+        <RadioButton
+            android:id="@+id/next_month"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="下月" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:id="@+id/list_view"
+        android:background="@color/new_content_item_bg"></ListView>
+
+</LinearLayout>

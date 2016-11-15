@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">喜报</string>
+
+    <string name="no_network_connection_toast">No network connection found</string>
+
+    <string name="title_activity_fullscreen">blank</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="exit_app">再按一次退出</string>
+
+    <!-- 页面名称 -->
+    <string name="main_navigation_new">动态</string>
+    <string name="main_navigation_performance">业绩</string>
+    <string name="main_navigation_workbench">工作台</string>
+    <string name="main_navigation_application">应用</string>
+    <string name="news_navigation_order_list">新增订单</string>
+    <string name="news_navigation_order_detail">订单详情</string>
+
+    <string name="hint_feedback">请输入您的问题，感谢您的反馈...</string>
+
+    <string-array name="news_titles">
+        <item>动态</item>
+        <item>业绩</item>
+        <item>工作台</item>
+        <item>应用</item>
+    </string-array>
+
+    <string-array name="message_titles">
+        <item>回访短信</item>
+        <item>激活短信</item>
+        <item>提醒短信</item>
+        <item>我的模版</item>
+    </string-array>
+</resources>

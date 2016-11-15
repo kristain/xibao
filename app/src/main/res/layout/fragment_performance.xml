@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/news_content_item_space"
+                android:background="@color/new_content_item_bg"
+                android:id="@+id/receive_pre_layout"
+                android:orientation="vertical"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="生美预收"
+                    android:textColor="#B90000"
+                    android:textSize="@dimen/text_size_18" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#B90000"></View>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="分配目标"
+                            android:textColor="#B90000"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/receive_pre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_38"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="万"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_14"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="fill_parent"
+                        android:background="#B90000"></View>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="计划目标"
+                            android:textColor="#B90000"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/receive_get"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:singleLine="true"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_38"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="万"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_14"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="fill_parent"
+                        android:background="#B90000"></View>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <com.drjing.xibao.common.view.circularprogressbar.CompleteRateCircleBar
+                                android:id="@+id/receive_circle"
+                                android:layout_width="70dip"
+                                android:layout_height="70dip"
+                                android:layout_gravity="center"
+                                android:clickable="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/sale_pre_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/news_content_item_space"
+                android:background="@color/new_content_item_bg"
+                android:orientation="vertical"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="医美预收"
+                    android:textColor="#B90000"
+                    android:textSize="@dimen/text_size_18" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#B90000"></View>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="分配目标"
+                            android:textColor="#B90000"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/sale_pre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:singleLine="true"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_38"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="万"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_14"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="fill_parent"
+                        android:background="#B90000"></View>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="计划目标"
+                            android:textColor="#B90000"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/sale_get"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:singleLine="true"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_38"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="万"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_14"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="fill_parent"
+                        android:background="#B90000"></View>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <com.drjing.xibao.common.view.circularprogressbar.CompleteRateCircleBar
+                                android:id="@+id/sale_circle"
+                                android:layout_width="70dip"
+                                android:layout_height="70dip"
+                                android:layout_gravity="center"
+                                android:clickable="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/product_pre_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/news_content_item_space"
+                android:background="@color/new_content_item_bg"
+                android:orientation="vertical"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="产品"
+                    android:textColor="#B90000"
+                    android:textSize="@dimen/text_size_18" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#B90000"></View>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="分配目标"
+                            android:textColor="#B90000"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/product_pre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:singleLine="true"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_38"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="万"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_14"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="fill_parent"
+                        android:background="#B90000"></View>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="计划目标"
+                            android:textColor="#B90000"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/product_get"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:singleLine="true"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_38"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="万"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_14"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="fill_parent"
+                        android:background="#B90000"></View>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <com.drjing.xibao.common.view.circularprogressbar.CompleteRateCircleBar
+                                android:id="@+id/product_circle"
+                                android:layout_width="70dip"
+                                android:layout_height="70dip"
+                                android:layout_gravity="center"
+                                android:clickable="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/consume_pre_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/news_content_item_space"
+                android:background="@color/new_content_item_bg"
+                android:orientation="vertical"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="消耗"
+                    android:textColor="#B90000"
+                    android:textSize="@dimen/text_size_18" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#B90000"></View>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="分配目标"
+                            android:textColor="#B90000"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/consume_pre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:singleLine="true"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_38"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="万"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_14"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="fill_parent"
+                        android:background="#B90000"></View>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="计划目标"
+                            android:textColor="#B90000"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/consume_get"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:singleLine="true"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_38"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="万"
+                                android:textColor="#B90000"
+                                android:textSize="@dimen/text_size_14"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="fill_parent"
+                        android:background="#B90000"></View>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <com.drjing.xibao.common.view.circularprogressbar.CompleteRateCircleBar
+                                android:id="@+id/consume_circle"
+                                android:layout_width="70dip"
+                                android:layout_height="70dip"
+                                android:layout_gravity="center"
+                                android:clickable="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/news_content_hor_view"
+                    android:layout_height="fill_parent"
+                    android:background="@color/hor_view_red_color_bg"></View>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/new_content_item_bg"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/aim_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5.0dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp">
+
+                        <ImageView
+                            android:id="@+id/aim_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/icon_yj_m" />
+
+                        <TextView
+                            android:id="@+id/aim"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10.0dp"
+                            android:layout_toRightOf="@+id/aim_logo"
+                            android:ellipsize="end"
+                            android:text="设定目标"
+                            android:textColor="@color/color_text_black"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dp"
+                            android:layout_marginRight="5.0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/icon_enter_arrow" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="@color/new_content_item_split_view"></View>
+
+                    <RelativeLayout
+                        android:id="@+id/wallet_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5.0dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp">
+
+                        <ImageView
+                            android:id="@+id/wallet_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/icon_yj_q" />
+
+                        <TextView
+                            android:id="@+id/wallet"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10.0dp"
+                            android:layout_toRightOf="@+id/wallet_logo"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="钱包"
+                            android:textColor="@color/color_text_black"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dp"
+                            android:layout_marginRight="5.0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/icon_enter_arrow" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="@color/new_content_item_split_view"></View>
+
+                    <RelativeLayout
+                        android:id="@+id/mysalve_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5.0dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp">
+
+                        <ImageView
+                            android:id="@+id/mysalve_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/icon_yj_credit_card" />
+
+                        <TextView
+                            android:id="@+id/mysalve"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10.0dp"
+                            android:layout_toRightOf="@+id/mysalve_logo"
+                            android:ellipsize="end"
+                            android:text="我的历史工资"
+                            android:textColor="@color/color_text_black"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dp"
+                            android:layout_marginRight="5.0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/icon_enter_arrow" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="@color/new_content_item_split_view"></View>
+
+                    <RelativeLayout
+                        android:id="@+id/rank_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5.0dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp">
+
+                        <ImageView
+                            android:id="@+id/rank_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/icon_yj_profile" />
+
+                        <TextView
+                            android:id="@+id/rank"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10.0dp"
+                            android:layout_toRightOf="@+id/rank_logo"
+                            android:ellipsize="end"
+                            android:text="英雄榜"
+                            android:textColor="@color/color_text_black"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dp"
+                            android:layout_marginRight="5.0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/icon_enter_arrow" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

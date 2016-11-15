@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="login_bar_bg">#F05958</color>
+    <color name="login_nav_bg">#EE5A58</color>
+    <color name="status_bar_bg">#FC0303</color>
+    <color name="main_header_bg">#FC0303</color>
+    <color name="main_footer_bg">#f4f5f6</color>
+    <color name="article_content_bg">#fefefe</color>
+    <color name="main_bg">#e2e0e0</color>
+
+
+    <!-- 底栏字体颜色 -->
+    <color name="footer_text_color_normal">#929292</color>
+    <color name="footer_text_color_selected">#FF0000</color>
+    <color name="test">#29a6f6</color>
+
+
+    <!--动态页面-->
+    <color name="hor_view_red_color_bg">#F0A9AA</color>
+    <color name="hor_view_purple_color_bg">#CCA1F2</color>
+    <color name="hor_view_blue_color_bg">#92D9D5</color>
+    <color name="new_content_item_bg">#FEFFFF</color>
+    <color name="new_content_item_split_view">#E9EAEA</color>
+
+    <!--tab_strip_colors -->
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+
+    <color name="bg_bar">#383838</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="red">#FF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="yellow_lemon">#FFFACD</color>
+    <color name="gray_light">#DFDFDF</color>
+    <color name="gray_white">#F5F5F5</color>
+    <color name="gray_slate">#708090</color>
+    <color name="blue_light">#0083FF</color>
+    <color name="gray_dark">#ff333333</color>
+
+    <!-- 头部文字颜色 -->
+    <color name="background_color">#fff8f8f8</color>
+    <color name="head_text">#0e5986</color>
+    <color name="main_head_title">#ffffff</color>
+    <color name="main_head_title_shadow_color">#ffffffff</color>
+    <color name="company_name_color">#959595</color>
+    <color name="title_base_button_text_color">#ffffff</color>
+    <color name="list_view_bg">#efefef</color>
+
+    <color name="card_color_red">#fa8282</color>
+    <color name="card_color_orange">#ff8048</color>
+    <color name="card_color_yellow">#ffd237</color>
+    <color name="card_color_green">#abbf4f</color>
+    <color name="card_color_blue">#55b3da</color>
+    <color name="card_color_purple">#ae7fc7</color>
+
+    <!-- 手势密码 -->
+    <color name="color_security_bg">#203c54</color>
+    <color name="color_security_press">#38c9ff</color>
+
+    <!-- 通用 -->
+    <color name="color_radio_pressed">#FFA726</color>
+    <color name="color_stroke_black">#E5E6E6</color>
+    <color name="color_split_black">#F1F2F3</color>
+    <color name="color_text_black">#2B2B2B</color>
+    <color name="color_text_gray">#727272</color>
+    <color name="color_text_grey">#49596b</color>
+    <color name="futures_green">#ff40ab5e</color>
+    <color name="futures_red">#d13939</color>
+    <color name="color_login">#292c35</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_yellow">#fece00</color>
+    <color name="color_grey">#919aac</color>
+    <color name="color_blue">#04d6fc</color>
+    <color name="color_black">#20242b</color>
+    <color name="color_text_value_grey">#8e9aab</color>
+    <color name="color_cell_grey">#d7dbe2</color>
+    <color name="color_yubibao_asset_bg">#e6eaf0</color>
+    <color name="color_red1">#ef3f2f</color>
+    <color name="color_red">#d13a38</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="sample_primary">#4590bd</color>
+    <color name="sample_accent">#88bfcb</color>
+    <color name="colorPrimary">@color/blue</color>
+
+    <color name="cyan">#00BCD4</color>
+    <color name="psts_underline_color">#D3D4D5</color>
+    <color name="tab_text_color">#4D4F50</color>
+    <color name="selected_tab_text_color">#FD0000</color>
+
+    <color name="paper_button_color">#ffffffff</color>
+    <color name="paper_button_shadow_color">#000000</color>
+    <color name="paper_text_color">#60000000</color>
+
+    <color name="report_bg">#eeeff0</color>
+    <color name="report_splitline_color">#d6d7d8</color>
+
+    <color name="edit_photo_bg_color">#f1f4f2</color>
+    <color name="blue_text">#007aff</color>
+
+    <color name="item_selected_gray">#d9d9d9</color>
+
+    <color name="wallet_product_color">#F796F0</color>
+    <color name="wallet_consumer_color">#F0A3A3</color>
+    <color name="wallet_other_color">#E4F3A1</color>
+
+    <color name="log_btn_text_color">#7C7D7E</color>
+    <color name="date_solid_color">#E4E5E6</color>
+
+    <!-- 自定义dialog特效对话框样式 -->
+    <color name="text_color">#FFFFFF</color>
+    <color name="divider_color">#11000000</color>
+    <color name="msg_color">#FFFFFFFF</color>
+    <color name="dialog_bg">#ffe74c3c</color>
+    <color name="btn_press_color">#66000000</color>
+    <color name="btn_unpress_color">#22000000</color>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="mcv_pager" type="id" />
+    <item type="id" name="materialviewpager_pagerTitleStrip" />
+    <item type="id" name="materialviewpager_imageHeader" />
+    <item type="id" name="materialviewpager_headerImageDarkLayer" />
+    <item type="id" name="materialviewpager_viewpager" />
+
+</resources>
